@@ -1,0 +1,14 @@
+Template engine   handlerbars
+database 
+rest full api .. for frontend devs to work with 
+
+
+
+
+/// npm packages
+express ....
+nodemon  .....
+npm i express-handlebars   temeplate .....
+npm i dotenv
+database npm i mongoose 
+cors allowing the frontend dev to work the api  npm i cors 
