@@ -4,10 +4,10 @@ const app = express();
 // env connections
 const dotenv = require("dotenv");
 const dotenvb = require("dotenv").config();
-//  template engine ebs 
-const {engine} = require('express-handlebars');
+
 // template engines connection
 const { engine } = require("express-handlebars");
+
 app.use(express.urlencoded({ extended: true }));
 app.engine("hbs", engine({ extname: ".hbs", defaultLayout: "index" }));
 app.set("view engine", "hbs");
@@ -20,10 +20,26 @@ app.use(express.static(path.join(__dirname, "public")));
 
 //routes
 
-app.get("/" || "/index", (req, res) => {
+app.get( "/index", (req, res) => {
   res.render("pages/index");
 });
 
+
+//  Matthew {ROUTES}
+// services route
+app.get('/services', (req, res)=>{
+    res.render('./pages/services');
+})
+
+// testimonial route
+app.get('/testimonial', (req, res)=>{
+    res.render('./pages/testimonial');
+})
+
+// about route
+app.get('/about', (req, res)=>{
+    res.render('./pages/about');
+})
 app.listen(process.env.PORT || 8000, () => {
   console.log("server is running ");
 });
