@@ -21,7 +21,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 //routes
 
 
-
 app.listen(process.env.PORT || 8000, () => {
     console.log('server is running ')
 })
