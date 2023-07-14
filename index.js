@@ -20,6 +20,16 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 //routes
 
+app.get('/index',(req, res) =>{
+    res.render('pages/index')
+    
+})
+
+app.get('/index',(req, res) =>{
+    res.render('pages/index')
+    
+})
+
 
 app.listen(process.env.PORT || 8000, () => {
     console.log('server is running ')
