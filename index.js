@@ -4,7 +4,8 @@ const app = express();
 // env connections
 const dotenv = require('dotenv');
 const dotenvb = require('dotenv').config();
-
+//  template engine ebs 
+const {engine} = require('express-handlebars');
 // template engines connection
 app.use(express.urlencoded({ extended: true }));
 app.engine('hbs', engine({ extname: '.hbs', defaultLayout: "index" }));
