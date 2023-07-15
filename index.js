@@ -19,7 +19,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 //routes
 
-
+// dammydee
+// app.get('/contact',(req,res)=>{
+//     res.render('pages/contact')
+// })
 app.listen(process.env.PORT || 8000, () => {
     console.log('server is running ')
 })
