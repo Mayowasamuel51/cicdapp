@@ -42,7 +42,7 @@ app.get('/contact',(req,res)=>{
 })
 // about route
 app.get('/about', (req, res)=>{
-    res.render('./pages/about');
+    res.render('./pages/about'); 
 })
 app.listen(process.env.PORT || 8000, () => {
   console.log("server is running ");
