@@ -38,7 +38,7 @@ app.get('/testimonial', (req, res)=>{
 // dammydee
 // contact routes
 app.get('/contact',(req,res)=>{
-    res.render('./pages/contact')
+    res.render('./pages/contact');
 })
 // about route
 app.get('/about', (req, res)=>{
