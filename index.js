@@ -35,14 +35,14 @@ app.get('/services', (req, res)=>{
 app.get('/testimonial', (req, res)=>{
     res.render('./pages/testimonial');
 })
-// dammydee
-// contact routes
-app.get('/contact',(req,res)=>{
-    res.render('./pages/contact');
-})
 // about route
 app.get('/about', (req, res)=>{
     res.render('./pages/about'); 
+})
+// dammydee
+// contact routes
+app.get('/contact',(req,res)=>{
+  res.render('./pages/contact')
 })
 app.listen(process.env.PORT || 8000, () => {
   console.log("server is running ");
